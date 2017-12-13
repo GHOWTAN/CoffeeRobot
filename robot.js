@@ -24,7 +24,7 @@ class Robot {
     	if (data.indexOf('username') != -1) {
     	   telnetConn.write(user + '\r\n');
     	} else if (data.indexOf('pass') != -1) {
-    	   telnetConn.write(pass + '\r\n');
+    	   telnetConn.write(passwd + '\r\n');
     	}
 
     });
