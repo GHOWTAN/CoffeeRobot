@@ -37,7 +37,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 
   <div class="w3-panel">
     <h1><b>CoffeeRobot</b></h1>
-    
+
   </div>
 
   <!-- Slideshow -->
@@ -45,19 +45,19 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
     <div class="w3-display-container mySlides">
       <img src="Omron.jpg" style="width:100%">
       <div class="w3-display-topleft w3-container w3-padding-32">
-        
+
       </div>
     </div>
     <div class="w3-display-container mySlides">
       <img src="Omron1.jpg" style="width:100%">
       <div class="w3-display-middle w3-container w3-padding-32">
-       
+
       </div>
     </div>
     <div class="w3-display-container mySlides">
       <img src="Omron2.jpg" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
-        
+
       </div>
     </div>
 
@@ -65,7 +65,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
     <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
       <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
       <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
-    
+
       <div class="w3-center">
         <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
         <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
@@ -73,7 +73,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
       </div>
     </div>
   </div>
-  
+
   <!-- Grid -->
   <div class="w3-row w3-container">
     <div class="w3-center w3-padding-64">
@@ -117,55 +117,35 @@ path.</p>
 
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Main door</li>
-        
-        </li>
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Dock/undock</li>
         <li class="w3-light-grey w3-padding-24">
-          <button  onclick="loadDoc('say good morning')" class="w3-button w3-green w3-padding-large">Say hello</button>
-          <button  onclick="loadDoc('popupSimple')" class="w3-button w3-green w3-padding-large">Popup Simple</button>
-          <button  onclick="loadDoc('stop')" class="w3-button w3-green w3-padding-large">Stop</button>
+          <button  onclick="loadDoc('dock')" class="w3-button w3-block w3-green w3-padding-large">dock</button>
+          <button  onclick="loadDoc('undock')" class="w3-button w3-block w3-green w3-padding-large">undock</button>
         </li>
       </ul>
     </div>
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Robot Laboratory</li>
-       
-        </li>
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Goto</li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large">Ready</button>
-          <button class="w3-button w3-green w3-padding-large">Call Robot</button>
-          <button class="w3-button w3-green w3-padding-large">Stop</button>
+          <button onclick="loadDoc('goto machining')" class="w3-button w3-block w3-green w3-padding-large">goto machining</button>
+          <button onclick="loadDoc('goto robotics')" class="w3-button w3-block w3-green w3-padding-large">goto robotics</button>
+          <button onclick="loadDoc('goto middle corridor')" class="w3-button w3-block w3-green w3-padding-large">goto middle corridor</button>
         </li>
       </ul>
     </div>
 
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Middle Corridor</li>
-       
-        </li>
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Say</li>
         <li class="w3-light-grey w3-padding-24">
-           <button class="w3-button w3-green w3-padding-large">Ready</button>
-          <button class="w3-button w3-green w3-padding-large">Call Robot</button>
-          <button class="w3-button w3-green w3-padding-large">Stop</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Machining Laboratory</li>
-      
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large">Ready</button>
-          <button class="w3-button w3-green w3-padding-large">Call Robot</button>
-          <button class="w3-button w3-green w3-padding-large">Stop</button>
+          <button  onclick="loadDoc('say good morning')" class="w3-button w3-block w3-green w3-padding-large">say good morning</button>
+          <button  onclick="loadDoc('say good evening')" class="w3-button w3-block w3-green w3-padding-large">say good evening</button>
+          <button  onclick="loadDoc('say I like you')" class="w3-button w3-block w3-green w3-padding-large">say I like you</button>
         </li>
       </ul>
     </div>
 
-    
   </div>
 
   <!-- Grid -->
@@ -251,7 +231,7 @@ path.</p>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  
+
 </footer>
 
 
@@ -281,15 +261,15 @@ function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demodots");
-  if (n > x.length) {slideIndex = 1}    
+  if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length} ;
   for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+     x[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
      dots[i].className = dots[i].className.replace(" w3-white", "");
   }
-  x[slideIndex-1].style.display = "block";  
+  x[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " w3-white";
 }
 </script>
