@@ -1,7 +1,7 @@
 const http = require('http');
 const url = require('url');
 const fs = require('fs');
-const Robot = new require('./robot');
+const Robot = require('./robot');
 
 // ============================================================
 // variables
@@ -30,7 +30,7 @@ const server = http.createServer(function (request, response) {
     var qdata = q.query;                // ?order=left
     var txt = qdata.order;
 
-    robot.send(txt);
+    coffeeRobot.send(txt);
   } else {
     var filename = "." + q.pathname;
     fs.readFile(filename, function(err, data) {

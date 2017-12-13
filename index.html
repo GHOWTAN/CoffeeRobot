@@ -14,110 +14,20 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 </style>
 <body>
 
-<!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-large w3-light-grey">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block">Home</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#plans" class="w3-button w3-block">Plans</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block">About</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#contact" class="w3-button w3-block">Contact</a>
-    </div>
-  </div>
-</div>
+
 
 <!-- Content -->
-<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
-
-  <div class="w3-panel">
-    <h1><b>CoffeeRobot</b></h1>
-
-  </div>
-
-  <!-- Slideshow -->
-  <div class="w3-container">
-    <div class="w3-display-container mySlides">
-      <img src="Omron.jpg" style="width:100%">
-      <div class="w3-display-topleft w3-container w3-padding-32">
-
-      </div>
-    </div>
-    <div class="w3-display-container mySlides">
-      <img src="Omron1.jpg" style="width:100%">
-      <div class="w3-display-middle w3-container w3-padding-32">
-
-      </div>
-    </div>
-    <div class="w3-display-container mySlides">
-      <img src="Omron2.jpg" style="width:100%">
-      <div class="w3-display-topright w3-container w3-padding-32">
-
-      </div>
-    </div>
-
-    <!-- Slideshow next/previous buttons -->
-    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
-      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
-      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
-
-      <div class="w3-center">
-        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Grid -->
-  <div class="w3-row w3-container">
-    <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Instruction</span>
-    </div>
-    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
-      <h3>"Call robot" Button</h3>
-      <p>By pressing any of the ”Call robot” buttons, the robot will find its path to
-the chosen location. When robot has reached the goal, it will stop and
-wait for you to make your shoppings.</p>
-    </div>
-
-    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
-      <h3>"Stop" Button</h3>
-      <p>When the robot is not called to any of the locations you can press ”Stop
-robot” button to stop the robot at current location and make your
-shoppings.</p>
-    </div>
-
-    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
-      <h3>"Ready" button</h3>
-      <p>Always remember to press ”Ready” button, to let the robot continue its
-path. If ”Ready” button is not pressed within 3 minutes the robot will
-automatically get going.</p>
-    </div>
-
-    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
-      <h3>Waiting List</h3>
-      <p>If robot has already been called to another location, you will be put to a
-line and will be served at your turn.</p>
-    </div>
-  </div>
+<div class="w3-content" style="max-width:1100px;margin-top:20px;margin-bottom:80px">
 
   <!-- Grid -->
   <div class="w3-row-padding" id="plans">
     <div class="w3-center w3-padding-64">
       <h3>Call Robot</h3>
-      <p>Choose a place by pressing any of the"Call Robot" buttons. Always remember to press ”Ready” button, to let the robot continue its
-path.</p>
     </div>
 
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Dock/undock</li>
+        <li class="w3-dark-grey w3-xlarge w3-padding-16">Dock/undock</li>
         <li class="w3-light-grey w3-padding-24">
           <button  onclick="loadDoc('dock')" class="w3-button w3-block w3-green w3-padding-large">dock</button>
           <button  onclick="loadDoc('undock')" class="w3-button w3-block w3-green w3-padding-large">undock</button>
@@ -126,7 +36,7 @@ path.</p>
     </div>
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Goto</li>
+        <li class="w3-dark-grey w3-xlarge w3-padding-16">Goto</li>
         <li class="w3-light-grey w3-padding-24">
           <button onclick="loadDoc('goto machining')" class="w3-button w3-block w3-green w3-padding-large">goto machining</button>
           <button onclick="loadDoc('goto robotics')" class="w3-button w3-block w3-green w3-padding-large">goto robotics</button>
@@ -137,7 +47,7 @@ path.</p>
 
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Say</li>
+        <li class="w3-dark-grey w3-xlarge w3-padding-16">Say</li>
         <li class="w3-light-grey w3-padding-24">
           <button  onclick="loadDoc('say good morning')" class="w3-button w3-block w3-green w3-padding-large">say good morning</button>
           <button  onclick="loadDoc('say good evening')" class="w3-button w3-block w3-green w3-padding-large">say good evening</button>
@@ -146,93 +56,20 @@ path.</p>
       </ul>
     </div>
 
-  </div>
-
-  <!-- Grid -->
-  <div class="w3-row-padding" id="about">
-    <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
-    </div>
-
     <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <img src="" alt="" style="width:100%">
-        <div class="w3-container">
-          <h3></h3>
-          <p class="w3-opacity"></p>
-          <p></p>
-          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-        </div>
-      </div>
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-dark-grey w3-xlarge w3-padding-16">Special</li>
+        <li class="w3-light-grey w3-padding-24">
+          <button  onclick="loadDoc('follow')" class="w3-button w3-block w3-green w3-padding-large">follow</button>
+          <button  onclick="loadDoc('play SkwQjPiLJA_fmt43.wav')" class="w3-button w3-block w3-green w3-padding-large">play song</button>
+          <button  onclick="loadDoc('stop')" class="w3-button w3-block w3-green w3-padding-large">stop</button>
+        </li>
+      </ul>
     </div>
 
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <img src="" alt="" style="width:100%">
-        <div class="w3-container">
-          <h3></h3>
-          <p class="w3-opacity"></p>
-          <p></p>
-          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <img src="" alt="" style="width:100%">
-        <div class="w3-container">
-          <h3></h3>
-          <p class="w3-opacity"></p>
-          <p></p>
-          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-        </div>
-      </div>
-    </div>
   </div>
-
-  <!-- Contact -->
-  <div class="w3-center w3-padding-64" id="contact">
-    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
-  </div>
-
-  <form class="w3-container" action="/action_page.php" target="_blank">
-    <div class="w3-section">
-      <label>Name</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
-    </div>
-    <div class="w3-section">
-      <label>Email</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
-    </div>
-    <div class="w3-section">
-      <label>Subject</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
-    </div>
-    <div class="w3-section">
-      <label>Message</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
-    </div>
-    <button type="submit" class="w3-button w3-block w3-black">Send</button>
-  </form>
-
 </div>
 
-<!-- Footer -->
-
-<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-  <h4>Footer</h4>
-  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-
-</footer>
 
 
 <script>
